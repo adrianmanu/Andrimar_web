@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Andrimar - Mariscos frescos en Quito. Pulpa de cangrejo, uñas de cangrejo, pulpo y calamar. Entrega rápida y productos de calidad.">
+  <meta name="keywords" content="pulpa de cangrejo, mariscos en Quito, Andrimar, pulpo, calamar, uñas de cangrejo, proveedores de mariscos">
+  <meta name="author" content="Andrimar">
+  <title>Andrimar | Mariscos Frescos en Quito</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+      color: #333; 
+      line-height: 1.6;
+    }
+
+    header { 
+      background: linear-gradient(135deg, #004d4d 0%, #006666 100%);
+      color: white; 
+      padding: 2rem; 
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav { 
+      background: #009999; 
+      text-align: center; 
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a { 
+      color: white; 
+      margin: 0 1.5rem; 
+      text-decoration: none; 
+      font-weight: bold;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+      transform: translateY(-2px);
+    }
+
+    section { 
+      padding: 3rem 2rem; 
+      max-width: 1200px; 
+      margin: auto; 
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #004d4d;
+      position: relative;
+    }
+
+    section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #009999, #004d4d);
+      border-radius: 2px;
+    }
+
+    .product-category {
+      margin-bottom: 3rem;
+    }
+
+    .category-title {
+      font-size: 2rem;
+      color: #009999;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #009999;
+      padding-bottom: 0.5rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .product { 
+      background: white; 
+      border-radius: 15px; 
+      padding: 1.5rem; 
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover img {
+      transform: scale(1.05);
+    }
+
+    .product h3 {
+      color: #004d4d;
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .product p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .about-content {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .about-intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .about-intro h3 {
+      font-size: 2.2rem;
+      color: #004d4d;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-intro .highlight {
+      color: #009999;
+    }
+
+    .lead-text {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      color: #009999;
+    }
+
+    .feature-content h4 {
+      color: #004d4d;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-content p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .about-commitment {
+      background: #f0f8ff;
+      padding: 2rem;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .about-commitment h3 {
+      color: #004d4d;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .about-commitment p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .about-cta {
+      background: #e6f3ff;
+      padding: 2rem;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .about-cta h3 {
+      color: #004d4d;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .benefits-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .benefits-list li {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      color: #555;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .benefits-list li::before {
+      content: "•";
+      color: #009999;
+      position: absolute;
+      left: 0;
+    }
+
+    .about-closing {
+      text-align: center;
+      padding: 1.5rem;
+      background: #f0f8ff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .closing-text {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .closing-text strong {
+      color: #004d4d;
+    }
+
+    .vision-mision {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .vision, .mision {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      border-left: 5px solid #009999;
+    }
+
+    .vision h3, .mision h3 {
+      color: #004d4d;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-info a {
+      color: #009999;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #004d4d;
+    }
+
+    .location-link {
+      color: #009999;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .location-link:hover {
+      color: #004d4d;
+    }
+
+    footer { 
+      background: linear-gradient(135deg, #004d4d 0%, #006666 100%);
+      color: white; 
+      text-align: center; 
+      padding: 2rem; 
+      margin-top: 3rem; 
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      font-size: 30px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    .whatsapp-button:hover { 
+      transform: scale(1.1);
+      box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #009999, #004d4d);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      border-radius: 15px;
+    }
+
+    .cta-section h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section h2::after {
+      background: white;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .cta-button:hover {
+      background: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+      
+      nav a { 
+        display: block; 
+        margin: 0.5rem 0; 
+      }
+      
+      section { 
+        padding: 2rem 1rem; 
+      }
+      
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .vision-mision {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Andrimar Logo" class="logo">
+      <div>
+        <h1>🐟 Andrimar</h1>
+        <p>Mariscos frescos en Quito - Calidad y sabor del mar</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#nosotros">Sobre Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="nosotros"> 
+    <h2>🏢 Sobre Nosotros</h2>
+    
+    <div class="about-content">
+      <div class="about-intro">
+        <h3>🐟 <span class="highlight">ANDRIMAR</span> - Líderes en Mariscos Frescos</h3>
+        <p class="lead-text">Con <strong>20 años de experiencia</strong> en el mercado nacional, somos <strong>proveedores directos</strong> que han transformado la industria de mariscos en Quito.</p>
+      </div>
+
+      <div class="about-features">
+        <div class="feature-item">
+          <div class="feature-icon">⭐</div>
+          <div class="feature-content">
+            <h4>Experiencia Comprobada</h4>
+            <p>Dos décadas de éxito en el mercado, sirviendo a los mejores restaurantes y distribuidores de Quito.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">🌊</div>
+          <div class="feature-content">
+            <h4>Frescura Garantizada</h4>
+            <p>Productos bioacuáticos con <strong>certeza de peso y frescura</strong>, seleccionados directamente de las mejores fuentes.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">🚚</div>
+          <div class="feature-content">
+            <h4>Entrega Puntual</h4>
+            <p>Servicio de entrega hasta tu hogar o negocio con <strong>cordialidad y puntualidad</strong> que nos caracteriza.</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">📅</div>
+          <div class="feature-content">
+            <h4>Disponibilidad Constante</h4>
+            <p><strong>Abastecidos todo el año</strong>, excepto los meses de veda, garantizando suministro continuo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-commitment">
+        <h3>💪 Nuestro Compromiso</h3>
+        <p>En ANDRIMAR, no solo vendemos mariscos; <strong>creamos experiencias culinarias excepcionales</strong>. Cada producto que entregamos representa nuestro compromiso con la calidad, la frescura y la satisfacción total del cliente.</p>
+        
+        <p>Nuestro equipo de expertos selecciona cuidadosamente cada pieza, asegurando que llegue a tu mesa con la misma frescura que tiene cuando sale del mar. <strong>Tu éxito es nuestro éxito</strong>, y por eso trabajamos incansablemente para superar tus expectativas.</p>
+      </div>
+
+      <div class="about-cta">
+        <h3>🎯 ¿Por qué elegir ANDRIMAR?</h3>
+        <ul class="benefits-list">
+          <li>✅ <strong>20 años de experiencia</strong> en el mercado nacional</li>
+          <li>✅ <strong>Proveedores directos</strong> - Sin intermediarios</li>
+          <li>✅ <strong>Frescura garantizada</strong> en todos nuestros productos</li>
+          <li>✅ <strong>Entrega rápida</strong> a domicilio o negocio</li>
+          <li>✅ <strong>Peso exacto</strong> - Sin sorpresas</li>
+          <li>✅ <strong>Atención personalizada</strong> y profesional</li>
+          <li>✅ <strong>Disponibilidad todo el año</strong> (excepto veda)</li>
+          <li>✅ <strong>Precios competitivos</strong> por compra directa</li>
+        </ul>
+      </div>
+
+      <div class="about-closing">
+        <p class="closing-text"><strong>Contáctanos hoy mismo</strong> y descubre por qué somos la elección preferida de restaurantes, hoteles y amantes de los mariscos en Quito. <strong>Estaremos gustosos de servirte</strong> y demostrarte la diferencia que hace trabajar con verdaderos expertos.</p>
+      </div>
+    </div>
+
+    <div class="vision-mision">
+      <div class="vision">
+        <h3>🎯 Nuestra Visión</h3>
+        <p>Ser el <strong>proveedor líder</strong> de mariscos frescos en Quito, reconocidos por nuestra calidad excepcional, confiabilidad inquebrantable y servicio de clase mundial. Aspiramos a ser el socio estratégico que impulse el éxito de restaurantes y satisfaga las necesidades más exigentes de nuestros clientes.</p>
+      </div>
+      <div class="mision">
+        <h3>🌟 Nuestra Misión</h3>
+        <p>Proporcionar productos marinos de la <strong>más alta calidad</strong>, garantizando frescura incomparable y peso exacto, con un servicio de entrega puntual y atención personalizada que <strong>supere las expectativas</strong> de nuestros clientes. Nos comprometemos a mantener los más altos estándares de calidad en cada entrega.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos">
+    <h2>🐚 Nuestros Productos Premium</h2>
+    
+    <div class="product-category">
+      <h3 class="category-title">🦀 Cangrejos</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Pulpa de Cangrejo Fresca">
+          <h3>🦀 Pulpa de Cangrejo</h3>
+          <p>Fresca, limpia y lista para cocinar. Ideal para ceviches, pastas y recetas gourmet.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Uñas de Cangrejo Premium">
+          <h3>🦞 Uñas de Cangrejo</h3>
+          <p>Selección premium de uñas de cangrejo para restaurantes y distribuidores.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-category">
+      <h3 class="category-title">🦞 Langostas y Langostinos</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Langosta Fresca">
+          <h3>🦞 Langosta</h3>
+          <p>Langosta fresca de la mejor calidad, perfecta para platos gourmet y eventos especiales.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Langostino Premium">
+          <h3>🦐 Langostino</h3>
+          <p>Langostinos frescos y de gran tamaño, ideales para ceviches y paellas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-category">
+      <h3 class="category-title">🐙 Pulpos</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Pulpo Fresco">
+          <h3>🐙 Pulpo</h3>
+          <p>Pulpo fresco o precocido, en cortes ideales para preparaciones marinas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-category">
+      <h3 class="category-title">🦑 Calamares</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Calamar Baby">
+          <h3>🦑 Calamar Baby</h3>
+          <p>Calamar baby tierno y delicado, perfecto para frituras y ceviches.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Calamar Pota">
+          <h3>🦑 Calamar Pota</h3>
+          <p>Calamar pota de gran tamaño, ideal para cortes en anillas y preparaciones gourmet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-category">
+      <h3 class="category-title">🦪 Almejas</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Almeja Blanca">
+          <h3>🦪 Almeja Blanca</h3>
+          <p>Almeja blanca fresca, perfecta para sopas y preparaciones marinas.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Almeja Perla">
+          <h3>🦪 Almeja Perla</h3>
+          <p>Almeja perla de excelente calidad, ideal para ceviches y platos gourmet.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Almeja Gris">
+          <h3>🦪 Almeja Gris</h3>
+          <p>Almeja gris fresca, perfecta para sopas y preparaciones tradicionales.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Almeja Pulpa">
+          <h3>🦪 Almeja Pulpa</h3>
+          <p>Pulpa de almeja limpia y lista para cocinar, ideal para pastas y arroces.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-category">
+      <h3 class="category-title">🦪 Mejillones</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Mejillón en Cáscara">
+          <h3>🦪 Mejillón en Cáscara</h3>
+          <p>Mejillones frescos en cáscara, perfectos para paellas y preparaciones marinas.</p>
+        </div>
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Mejillón Pulpa">
+          <h3>🦪 Mejillón Pulpa</h3>
+          <p>Pulpa de mejillón limpia y lista para cocinar, ideal para pastas y salsas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-category">
+      <h3 class="category-title">🦪 Otros Moluscos</h3>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Concha Fresca">
+          <h3>🦪 Concha</h3>
+          <p>Concha fresca de excelente calidad, perfecta para ceviches y preparaciones gourmet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h2>🚚 ¡Entrega Rápida y Segura!</h2>
+      <p>Llevamos nuestros productos frescos directamente a tu hogar o negocio en Quito y alrededores.</p>
+      <a href="https://wa.me/593994999468" class="cta-button" target="_blank">📞 ¡Ordena Ahora!</a>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>📞 Contacto</h2>
+    <div class="contact-info">
+      <p>📍 <strong>Ubicación:</strong> <a href="https://maps.google.com/?q=-0.08488224,-78.50351" target="_blank" class="location-link">C. O, Quito 170301</a></p>
+      <p>📞 <strong>WhatsApp:</strong> <a href="https://wa.me/593994999468" target="_blank">0994999468</a></p>
+      <p>✉️ <strong>Email:</strong> <a href="mailto:ana_acosta_ra@hotmail.com">ana_acosta_ra@hotmail.com</a></p>
+      <p>🕒 <strong>Horario de Atención:</strong> Lunes a Sábado 8:00 AM - 6:00 PM</p>
+      <p>🚚 <strong>Entrega:</strong> Quito y alrededores</p>
+    </div>
+  </section>
+
+  <a href="https://wa.me/593994999468" class="whatsapp-button" title="Contáctanos por WhatsApp">📞</a>
+
+  <footer>
+    <p>&copy; 2025 Andrimar - Todos los derechos reservados.</p>
+    <p>🐟 Proveedores de mariscos frescos con 20 años de experiencia</p>
+  </footer>
+</body>
+</html>

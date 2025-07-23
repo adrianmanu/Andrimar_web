@@ -28,6 +28,13 @@
 /* Forzar modo claro en todos los navegadores */
 html {
   color-scheme: light;
+  background: var(--background-light) !important;
+}
+
+/* Forzar fondo claro en body y html */
+html, body {
+  background: linear-gradient(135deg, var(--background-light) 0%, var(--background-lighter) 100%) !important;
+  color: var(--text-color) !important;
 }
 
 /* Configuración base del body */
@@ -36,12 +43,13 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%) !important;
 }
 
 body { 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  background: linear-gradient(135deg, var(--background-light) 0%, var(--background-lighter) 100%);
-  color: var(--text-color); 
+  background: linear-gradient(135deg, var(--background-light) 0%, var(--background-lighter) 100%) !important;
+  color: var(--text-color) !important; 
   line-height: 1.6;
   scroll-behavior: smooth;
   min-height: 100vh;

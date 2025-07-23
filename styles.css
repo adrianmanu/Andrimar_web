@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Variables CSS para consistencia */
+/* Variables CSS para consistencia - FORZADO MODO CLARO */
 :root {
   --primary-color: #004d4d;
   --secondary-color: #009999;
@@ -23,6 +23,11 @@
   --shadow-heavy: rgba(0,0,0,0.2);
   --border-radius: 15px;
   --transition: all 0.3s ease;
+}
+
+/* Forzar modo claro en todos los navegadores */
+html {
+  color-scheme: light;
 }
 
 /* Configuración base del body */
@@ -1488,8 +1493,8 @@ button:focus,
   z-index: 10;
 }
 
-/* Modo oscuro */
-@media (prefers-color-scheme: dark) {
+/* Modo oscuro - DESHABILITADO para mantener consistencia */
+/* @media (prefers-color-scheme: dark) {
   :root {
     --text-color: #ffffff;
     --light-text: #cccccc;
@@ -1501,7 +1506,7 @@ button:focus,
   body {
     background: linear-gradient(135deg, var(--background-light) 0%, var(--background-lighter) 100%);
   }
-} 
+} */ 
 
 /* Process Quality Section */
 .process-intro {

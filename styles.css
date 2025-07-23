@@ -1501,20 +1501,7 @@ button:focus,
   z-index: 10;
 }
 
-/* Modo oscuro - DESHABILITADO para mantener consistencia */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #ffffff;
-    --light-text: #cccccc;
-    --background-light: #1a1a1a;
-    --background-lighter: #2a2a2a;
-    --white: #333333;
-  }
-  
-  body {
-    background: linear-gradient(135deg, var(--background-light) 0%, var(--background-lighter) 100%);
-  }
-} */ 
+/* Modo oscuro completamente eliminado para mantener consistencia */ 
 
 /* Process Quality Section */
 .process-intro {

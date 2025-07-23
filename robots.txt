@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://andrimar.github.io/sitemap.xml
+
+# Crawl-delay para ser respetuoso con el servidor
+Crawl-delay: 1
+
+# Permitir acceso a recursos importantes
+Allow: /img/
+Allow: /logo.png
+Allow: /favicon.ico
+Allow: /styles.css
+Allow: /script.js
+
+# Bloquear archivos innecesarios
+Disallow: /README.md
+Disallow: /.git/
+Disallow: /node_modules/ 

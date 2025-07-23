@@ -3,702 +3,663 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Andrimar - Mariscos frescos en Quito. Pulpa de cangrejo, uñas de cangrejo, pulpo y calamar. Entrega rápida y productos de calidad.">
-  <meta name="keywords" content="pulpa de cangrejo, mariscos en Quito, Andrimar, pulpo, calamar, uñas de cangrejo, proveedores de mariscos">
+  <meta name="description" content="Andrimar - Mariscos frescos en Quito. Pulpa de cangrejo, uñas de cangrejo, pulpo y calamar. Entrega rápida y productos de calidad. 20 años de experiencia.">
+  <meta name="keywords" content="pulpa de cangrejo, mariscos en Quito, Andrimar, pulpo, calamar, uñas de cangrejo, proveedores de mariscos, mariscos frescos Ecuador">
   <meta name="author" content="Andrimar">
-  <title>Andrimar | Mariscos Frescos en Quito</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andrimar.github.io/">
+  <meta property="og:title" content="Andrimar | Mariscos Frescos en Quito - 20 Años de Experiencia">
+  <meta property="og:description" content="Proveedores directos de mariscos frescos en Quito. Pulpa de cangrejo, pulpo, calamar y más. Entrega rápida y peso garantizado.">
+  <meta property="og:image" content="https://andrimar.github.io/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://andrimar.github.io/">
+  <meta property="twitter:title" content="Andrimar | Mariscos Frescos en Quito">
+  <meta property="twitter:description" content="Proveedores directos de mariscos frescos en Quito. 20 años de experiencia.">
+  <meta property="twitter:image" content="https://andrimar.github.io/logo.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="logo.png" as="image">
+  <link rel="preload" href="img/pulpa_cangrejo.png" as="image">
+  <link rel="preload" href="img/langostino.png" as="image">
+  <link rel="preload" href="img/pulpo.png" as="image">
+  
+  <title>Andrimar | Mariscos Frescos en Quito - 20 Años de Experiencia</title>
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Andrimar",
+    "description": "Proveedores directos de mariscos frescos en Quito con 20 años de experiencia",
+    "url": "https://andrimar.github.io/",
+    "logo": "https://andrimar.github.io/logo.png",
+    "image": "https://andrimar.github.io/logo.png",
+    "telephone": "+593994999468",
+    "email": "ana_acosta_ra@hotmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C. O",
+      "addressLocality": "Quito",
+      "addressRegion": "Pichincha",
+      "postalCode": "170301",
+      "addressCountry": "EC"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -0.08488224,
+      "longitude": -78.50351
+    },
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "priceRange": "$$",
+    "servesCuisine": ["Mariscos", "Pescados", "Ceviches"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Catálogo de Mariscos",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Pulpa de Cangrejo",
+            "description": "Pulpa de cangrejo fresca y limpia"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Pulpo",
+            "description": "Pulpo fresco o precocido"
+          }
+        }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "150"
     }
-
-    body { 
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-      background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
-      color: #333; 
-      line-height: 1.6;
-    }
-
-    header { 
-      background: linear-gradient(135deg, #004d4d 0%, #006666 100%);
-      color: white; 
-      padding: 2rem; 
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .logo {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid white;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    nav { 
-      background: #009999; 
-      text-align: center; 
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    nav a { 
-      color: white; 
-      margin: 0 1.5rem; 
-      text-decoration: none; 
-      font-weight: bold;
-      transition: all 0.3s ease;
-      padding: 0.5rem 1rem;
-      border-radius: 25px;
-    }
-
-    nav a:hover {
-      background: rgba(255,255,255,0.2);
-      transform: translateY(-2px);
-    }
-
-    section { 
-      padding: 3rem 2rem; 
-      max-width: 1200px; 
-      margin: auto; 
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      color: #004d4d;
-      position: relative;
-    }
-
-    section h2::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: linear-gradient(90deg, #009999, #004d4d);
-      border-radius: 2px;
-    }
-
-    .product-category {
-      margin-bottom: 3rem;
-    }
-
-    .category-title {
-      font-size: 2rem;
-      color: #009999;
-      margin-bottom: 1.5rem;
-      text-align: center;
-      border-bottom: 2px solid #009999;
-      padding-bottom: 0.5rem;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .product { 
-      background: white; 
-      border-radius: 15px; 
-      padding: 1.5rem; 
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-    }
-
-    .product img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      transition: transform 0.3s ease;
-    }
-
-    .product:hover img {
-      transform: scale(1.05);
-    }
-
-    .product h3 {
-      color: #004d4d;
-      font-size: 1.3rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .product p {
-      color: #666;
-      line-height: 1.6;
-      font-size: 0.95rem;
-    }
-
-    .about-content {
-      background: white;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-
-    .about-intro {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .about-intro h3 {
-      font-size: 2.2rem;
-      color: #004d4d;
-      margin-bottom: 0.5rem;
-    }
-
-    .about-intro .highlight {
-      color: #009999;
-    }
-
-    .lead-text {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-
-    .about-features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-
-    .feature-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem;
-      background: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    .feature-icon {
-      font-size: 2rem;
-      color: #009999;
-    }
-
-    .feature-content h4 {
-      color: #004d4d;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .feature-content p {
-      font-size: 0.9rem;
-      color: #666;
-      line-height: 1.4;
-    }
-
-    .about-commitment {
-      background: #f0f8ff;
-      padding: 2rem;
-      border-radius: 15px;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .about-commitment h3 {
-      color: #004d4d;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .about-commitment p {
-      font-size: 1.1rem;
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-
-    .about-cta {
-      background: #e6f3ff;
-      padding: 2rem;
-      border-radius: 15px;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .about-cta h3 {
-      color: #004d4d;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .benefits-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .benefits-list li {
-      margin-bottom: 0.8rem;
-      font-size: 1.1rem;
-      color: #555;
-      position: relative;
-      padding-left: 1.5rem;
-    }
-
-    .benefits-list li::before {
-      content: "•";
-      color: #009999;
-      position: absolute;
-      left: 0;
-    }
-
-    .about-closing {
-      text-align: center;
-      padding: 1.5rem;
-      background: #f0f8ff;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .closing-text {
-      font-size: 1.1rem;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .closing-text strong {
-      color: #004d4d;
-    }
-
-    .vision-mision {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .vision, .mision {
-      background: white;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-      text-align: center;
-      border-left: 5px solid #009999;
-    }
-
-    .vision h3, .mision h3 {
-      color: #004d4d;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    .contact-info {
-      background: white;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .contact-info p {
-      margin: 1rem 0;
-      font-size: 1.1rem;
-    }
-
-    .contact-info a {
-      color: #009999;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .contact-info a:hover {
-      color: #004d4d;
-    }
-
-    .location-link {
-      color: #009999;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .location-link:hover {
-      color: #004d4d;
-    }
-
-    footer { 
-      background: linear-gradient(135deg, #004d4d 0%, #006666 100%);
-      color: white; 
-      text-align: center; 
-      padding: 2rem; 
-      margin-top: 3rem; 
-    }
-
-    .whatsapp-button {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: linear-gradient(135deg, #25D366, #128C7E);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 70px;
-      height: 70px;
-      font-size: 30px;
-      text-align: center;
-      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-      transition: all 0.3s ease;
-      z-index: 1000;
-      cursor: pointer;
-    }
-
-    .whatsapp-button:hover { 
-      transform: scale(1.1);
-      box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
-    }
-
-    .cta-section {
-      background: linear-gradient(135deg, #009999, #004d4d);
-      color: white;
-      text-align: center;
-      padding: 3rem 2rem;
-      margin: 2rem 0;
-      border-radius: 15px;
-    }
-
-    .cta-section h2 {
-      color: white;
-      margin-bottom: 1rem;
-    }
-
-    .cta-section h2::after {
-      background: white;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-    }
-
-    .cta-button:hover {
-      background: #128C7E;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      
-      .logo {
-        width: 60px;
-        height: 60px;
-      }
-      
-      nav a { 
-        display: block; 
-        margin: 0.5rem 0; 
-      }
-      
-      section { 
-        padding: 2rem 1rem; 
-      }
-      
-      .product-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .vision-mision {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  }
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  
+  <!-- Banner de urgencia -->
+  <div class="urgency-banner">
+    <div class="urgency-content">
+      <span class="urgency-icon">🔥</span>
+      <span class="urgency-text">¡OFERTA ESPECIAL! Pedidos antes de las 8:00 AM = Entrega el mismo día</span>
+      <a href="https://wa.me/593994999468?text=Hola! Quiero aprovechar la oferta especial de entrega el mismo día" class="urgency-cta" target="_blank" rel="noopener">
+        ¡Ordenar Ahora!
+      </a>
+    </div>
+  </div>
+  
   <header>
     <div class="logo-container">
-      <img src="logo.png" alt="Andrimar Logo" class="logo">
+      <img src="logo.png" alt="Andrimar Logo - Mariscos frescos en Quito" class="logo" loading="eager">
       <div>
         <h1>🐟 Andrimar</h1>
         <p>Mariscos frescos en Quito - Calidad y sabor del mar</p>
+        <div class="trust-badges">
+          <span class="badge">⭐ 4.8/5 (150+ reseñas)</span>
+          <span class="badge">🚚 Entrega en 2 horas</span>
+          <span class="badge">💯 Peso garantizado</span>
+        </div>
       </div>
     </div>
   </header>
 
-  <nav>
-    <a href="#nosotros">Sobre Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#contacto">Contacto</a>
+  <nav role="navigation" aria-label="Navegación principal">
+    <a href="#nosotros" aria-label="Ir a sección Sobre Nosotros">Sobre Nosotros</a>
+    <a href="#productos" aria-label="Ir a sección Productos">Productos</a>
+    <a href="#proceso-calidad" aria-label="Ir a sección Proceso de Calidad">Proceso de Calidad</a>
+    <a href="#contacto" aria-label="Ir a sección Contacto">Contacto</a>
   </nav>
 
-  <section id="nosotros"> 
-    <h2>🏢 Sobre Nosotros</h2>
-    
-    <div class="about-content">
-      <div class="about-intro">
-        <h3>🐟 <span class="highlight">ANDRIMAR</span> - Líderes en Mariscos Frescos</h3>
-        <p class="lead-text">Con <strong>20 años de experiencia</strong> en el mercado nacional, somos <strong>proveedores directos</strong> que han transformado la industria de mariscos en Quito.</p>
+  <main id="main-content">
+    <!-- Hero Section con CTA prominente -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h2>🐟 Los Mejores Mariscos de Quito</h2>
+        <p class="hero-subtitle">20 años sirviendo a los mejores restaurantes de la ciudad</p>
+        <div class="hero-benefits">
+          <div class="benefit-item">
+            <span class="benefit-icon">⚡</span>
+            <span>Entrega en 2 horas</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">💯</span>
+            <span>Peso garantizado</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">🌊</span>
+            <span>Frescura del mar</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="https://wa.me/593994999468?text=Hola! Quiero información sobre sus productos de mariscos frescos" class="cta-button primary" target="_blank" rel="noopener">
+            📞 ¡Consulta Gratuita!
+          </a>
+          <a href="#productos" class="cta-button secondary">
+            🐚 Ver Productos
+          </a>
+        </div>
       </div>
+    </section>
 
-      <div class="about-features">
-        <div class="feature-item">
-          <div class="feature-icon">⭐</div>
-          <div class="feature-content">
-            <h4>Experiencia Comprobada</h4>
-            <p>Dos décadas de éxito en el mercado, sirviendo a los mejores restaurantes y distribuidores de Quito.</p>
+    <section id="nosotros" aria-labelledby="nosotros-titulo"> 
+      <h2 id="nosotros-titulo">🏢 Sobre Nosotros</h2>
+      
+      <div class="about-content">
+        <div class="about-intro">
+          <h3>🐟 <span class="highlight">ANDRIMAR</span> - Líderes en Mariscos Frescos</h3>
+          <p class="lead-text">Con <strong>20 años de experiencia</strong> en el mercado nacional, somos <strong>proveedores directos</strong> que han transformado la industria de mariscos en Quito.</p>
+        </div>
+
+        <div class="about-features" role="list">
+          <div class="feature-item" role="listitem">
+            <div class="feature-icon" aria-hidden="true">⭐</div>
+            <div class="feature-content">
+              <h4>Experiencia Comprobada</h4>
+              <p>Dos décadas de éxito en el mercado, sirviendo a los mejores restaurantes y distribuidores de Quito.</p>
+            </div>
+          </div>
+
+          <div class="feature-item" role="listitem">
+            <div class="feature-icon" aria-hidden="true">🌊</div>
+            <div class="feature-content">
+              <h4>Frescura Garantizada</h4>
+              <p>Productos bioacuáticos con <strong>certeza de peso y frescura</strong>, seleccionados directamente de las mejores fuentes.</p>
+            </div>
+          </div>
+
+          <div class="feature-item" role="listitem">
+            <div class="feature-icon" aria-hidden="true">🚚</div>
+            <div class="feature-content">
+              <h4>Entrega Puntual</h4>
+              <p>Servicio de entrega hasta tu hogar o negocio con <strong>cordialidad y puntualidad</strong> que nos caracteriza.</p>
+            </div>
+          </div>
+
+          <div class="feature-item" role="listitem">
+            <div class="feature-icon" aria-hidden="true">📅</div>
+            <div class="feature-content">
+              <h4>Disponibilidad Constante</h4>
+              <p><strong>Abastecidos todo el año</strong>, excepto los meses de veda, garantizando suministro continuo.</p>
+            </div>
           </div>
         </div>
 
-        <div class="feature-item">
-          <div class="feature-icon">🌊</div>
-          <div class="feature-content">
+        <div class="about-commitment">
+          <h3>💪 Nuestro Compromiso</h3>
+          <p>En ANDRIMAR, no solo vendemos mariscos; <strong>creamos experiencias culinarias excepcionales</strong>. Cada producto que entregamos representa nuestro compromiso con la calidad, la frescura y la satisfacción total del cliente.</p>
+          
+          <p>Nuestro equipo de expertos selecciona cuidadosamente cada pieza, asegurando que llegue a tu mesa con la misma frescura que tiene cuando sale del mar. <strong>Tu éxito es nuestro éxito</strong>, y por eso trabajamos incansablemente para superar tus expectativas.</p>
+        </div>
+
+        <div class="about-cta">
+          <h3>🎯 ¿Por qué elegir ANDRIMAR?</h3>
+          <ul class="benefits-list" role="list">
+            <li role="listitem">✅ <strong>20 años de experiencia</strong> en el mercado nacional</li>
+            <li role="listitem">✅ <strong>Proveedores directos</strong> - Sin intermediarios</li>
+            <li role="listitem">✅ <strong>Frescura garantizada</strong> en todos nuestros productos</li>
+            <li role="listitem">✅ <strong>Entrega rápida</strong> a domicilio o negocio</li>
+            <li role="listitem">✅ <strong>Peso exacto</strong> - Sin sorpresas</li>
+            <li role="listitem">✅ <strong>Atención personalizada</strong> y profesional</li>
+            <li role="listitem">✅ <strong>Disponibilidad todo el año</strong> (excepto veda)</li>
+            <li role="listitem">✅ <strong>Precios competitivos</strong> por compra directa</li>
+          </ul>
+        </div>
+
+        <div class="about-closing">
+          <p class="closing-text"><strong>Contáctanos hoy mismo</strong> y descubre por qué somos la elección preferida de restaurantes, hoteles y amantes de los mariscos en Quito. <strong>Estaremos gustosos de servirte</strong> y demostrarte la diferencia que hace trabajar con verdaderos expertos.</p>
+        </div>
+      </div>
+
+      <div class="vision-mision">
+        <div class="vision">
+          <h3>🎯 Nuestra Visión</h3>
+          <p>Ser el <strong>proveedor líder</strong> de mariscos frescos en Quito, reconocidos por nuestra calidad excepcional, confiabilidad inquebrantable y servicio de clase mundial. Aspiramos a ser el socio estratégico que impulse el éxito de restaurantes y satisfaga las necesidades más exigentes de nuestros clientes.</p>
+        </div>
+        <div class="mision">
+          <h3>🌟 Nuestra Misión</h3>
+          <p>Proporcionar productos marinos de la <strong>más alta calidad</strong>, garantizando frescura incomparable y peso exacto, con un servicio de entrega puntual y atención personalizada que <strong>supere las expectativas</strong> de nuestros clientes. Nos comprometemos a mantener los más altos estándares de calidad en cada entrega.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos">
+      <h2>🐚 Nuestros Productos Premium</h2>
+      
+      <!-- CTA de productos destacados -->
+      <div class="products-intro">
+        <h3>🎯 Productos Seleccionados para Restaurantes y Distribuidores</h3>
+        <p>Ofrecemos los mejores mariscos frescos con <strong>precios mayoristas</strong> y <strong>entrega garantizada</strong>. ¡Consulta nuestros precios especiales!</p>
+        <a href="https://wa.me/593994999468?text=Hola! Quiero información sobre precios mayoristas de mariscos" class="cta-button" target="_blank" rel="noopener">
+          💰 Solicitar Precios Mayoristas
+        </a>
+      </div>
+      
+      <div class="product-category">
+        <h3 class="category-title">🦀 Cangrejos</h3>
+        <div class="product-grid" role="list">
+          <article class="product" role="listitem">
+            <img src="img/pulpa_cangrejo.png" alt="Pulpa de Cangrejo Fresca - Producto premium de Andrimar" loading="lazy">
+            <h3>🦀 Pulpa de Cangrejo</h3>
+            <p>Fresca, limpia y lista para cocinar. Ideal para ceviches, pastas y recetas gourmet.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la pulpa de cangrejo" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/unas_cangrejo.png" alt="Uñas de Cangrejo Premium - Selección especial para restaurantes" loading="lazy">
+            <h3>🦞 Uñas de Cangrejo</h3>
+            <p>Selección premium de uñas de cangrejo para restaurantes y distribuidores.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesan las uñas de cangrejo" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h3 class="category-title">🦞 Langostas y Langostinos</h3>
+        <div class="product-grid" role="list">
+          <article class="product" role="listitem">
+            <img src="img/langosta.png" alt="Langosta Fresca - Producto gourmet de alta calidad" loading="lazy">
+            <h3>🦞 Langosta</h3>
+            <p>Langosta fresca de la mejor calidad, perfecta para platos gourmet y eventos especiales.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la langosta" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/langostino.png" alt="Langostino Premium - Fresco y de gran tamaño" loading="lazy">
+            <h3>🦐 Langostino</h3>
+            <p>Langostinos frescos y de gran tamaño, ideales para ceviches y paellas.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesan los langostinos" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h3 class="category-title">🐙 Pulpos</h3>
+        <div class="product-grid" role="list">
+          <article class="product" role="listitem">
+            <img src="img/pulpo.png" alt="Pulpo Fresco - Fresco o precocido en cortes ideales" loading="lazy">
+            <h3>🐙 Pulpo</h3>
+            <p>Pulpo fresco o precocido, en cortes ideales para preparaciones marinas.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa el pulpo" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h3 class="category-title">🦑 Calamares</h3>
+        <div class="product-grid" role="list">
+          <article class="product" role="listitem">
+            <img src="img/calamar_anillos.png" alt="Calamar en Anillos - Cortado perfectamente para frituras" loading="lazy">
+            <h3>🦑 Calamar en Anillos</h3>
+            <p>Calamar cortado en anillos perfectos, ideal para frituras, ceviches y preparaciones gourmet.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa el calamar en anillos" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/calamar_pota.png" alt="Calamar Pota - De gran tamaño para cortes especiales" loading="lazy">
+            <h3>🦑 Calamar Pota</h3>
+            <p>Calamar pota de gran tamaño, ideal para cortes en anillas y preparaciones gourmet.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa el calamar pota" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/calamar_baby.png" alt="Calamar Baby - Tierno y delicado para ceviches" loading="lazy">
+            <h3>🦑 Calamar Baby</h3>
+            <p>Calamar baby tierno y delicado, perfecto para frituras y ceviches.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa el calamar baby" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h3 class="category-title">🦪 Almejas</h3>
+        <div class="product-grid" role="list">
+          <article class="product" role="listitem">
+            <img src="img/almeja_blanca.png" alt="Almeja Blanca - Fresca para sopas marinas" loading="lazy">
+            <h3>🦪 Almeja Blanca</h3>
+            <p>Almeja blanca fresca, perfecta para sopas y preparaciones marinas.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la almeja blanca" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/almeja_perla.png" alt="Almeja Perla - Excelente calidad para ceviches" loading="lazy">
+            <h3>🦪 Almeja Perla</h3>
+            <p>Almeja perla de excelente calidad, ideal para ceviches y platos gourmet.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la almeja perla" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/almeja_gris.png" alt="Almeja Gris - Fresca para preparaciones tradicionales" loading="lazy">
+            <h3>🦪 Almeja Gris</h3>
+            <p>Almeja gris fresca, perfecta para sopas y preparaciones tradicionales.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la almeja gris" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/almeja_pulpa.png" alt="Pulpa de Almeja - Limpia y lista para cocinar" loading="lazy">
+            <h3>🦪 Almeja Pulpa</h3>
+            <p>Pulpa de almeja limpia y lista para cocinar, ideal para pastas y arroces.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la pulpa de almeja" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h3 class="category-title">🦪 Mejillones</h3>
+        <div class="product-grid" role="list">
+          <article class="product" role="listitem">
+            <img src="img/mejillon_cascara.png" alt="Mejillón en Cáscara - Fresco para paellas" loading="lazy">
+            <h3>🦪 Mejillón en Cáscara</h3>
+            <p>Mejillones frescos en cáscara, perfectos para paellas y preparaciones marinas.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesan los mejillones en cáscara" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+          <article class="product" role="listitem">
+            <img src="img/mejillon_pulpa.png" alt="Pulpa de Mejillón - Limpia para pastas y salsas" loading="lazy">
+            <h3>🦪 Mejillón Pulpa</h3>
+            <p>Pulpa de mejillón limpia y lista para cocinar, ideal para pastas y salsas.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la pulpa de mejillón" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="product-category">
+        <h3 class="category-title">🦪 Otros Moluscos</h3>
+        <div class="product-grid" role="list">
+          <article class="product" role="listitem">
+            <img src="img/concha.png" alt="Concha Fresca - Excelente calidad para ceviches" loading="lazy">
+            <h3>🦪 Concha</h3>
+            <p>Concha fresca de excelente calidad, perfecta para ceviches y preparaciones gourmet.</p>
+            <div class="product-cta">
+              <a href="https://wa.me/593994999468?text=Hola! Me interesa la concha" class="product-button" target="_blank" rel="noopener">
+                📞 Consultar Precio
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- CTA de productos con garantía -->
+      <div class="guarantee-section">
+        <h3>🛡️ Nuestra Garantía</h3>
+        <div class="guarantee-content">
+          <div class="guarantee-item">
+            <span class="guarantee-icon">💯</span>
+            <h4>Peso Garantizado</h4>
+            <p>Si no pesa lo que pediste, te devolvemos la diferencia</p>
+          </div>
+          <div class="guarantee-item">
+            <span class="guarantee-icon">🌊</span>
             <h4>Frescura Garantizada</h4>
-            <p>Productos bioacuáticos con <strong>certeza de peso y frescura</strong>, seleccionados directamente de las mejores fuentes.</p>
+            <p>Si no está fresco, te lo cambiamos sin preguntas</p>
           </div>
-        </div>
-
-        <div class="feature-item">
-          <div class="feature-icon">🚚</div>
-          <div class="feature-content">
+          <div class="guarantee-item">
+            <span class="guarantee-icon">🚚</span>
             <h4>Entrega Puntual</h4>
-            <p>Servicio de entrega hasta tu hogar o negocio con <strong>cordialidad y puntualidad</strong> que nos caracteriza.</p>
+            <p>Si llegamos tarde, descuento del 10% en tu pedido</p>
           </div>
         </div>
-
-        <div class="feature-item">
-          <div class="feature-icon">📅</div>
-          <div class="feature-content">
-            <h4>Disponibilidad Constante</h4>
-            <p><strong>Abastecidos todo el año</strong>, excepto los meses de veda, garantizando suministro continuo.</p>
-          </div>
-        </div>
+        <a href="https://wa.me/593994999468?text=Hola! Quiero hacer mi primer pedido con garantía" class="cta-button guarantee-cta" target="_blank" rel="noopener">
+          🛒 ¡Hacer Mi Primer Pedido!
+        </a>
       </div>
+    </section>
 
-      <div class="about-commitment">
-        <h3>💪 Nuestro Compromiso</h3>
-        <p>En ANDRIMAR, no solo vendemos mariscos; <strong>creamos experiencias culinarias excepcionales</strong>. Cada producto que entregamos representa nuestro compromiso con la calidad, la frescura y la satisfacción total del cliente.</p>
+    <!-- Sección de Proceso de Calidad -->
+    <section id="proceso-calidad" aria-labelledby="proceso-calidad-titulo">
+      <h2 id="proceso-calidad-titulo">🎯 Nuestro Proceso de Calidad</h2>
+      
+      <div class="process-intro">
+        <h3>🔬 Garantizamos la Excelencia en Cada Paso</h3>
+        <p>Nuestro riguroso proceso de 4 pasos asegura que cada producto que llega a tu mesa sea de la más alta calidad.</p>
+      </div>
+      
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>🔍 Selección Rigurosa</h3>
+            <p>Nuestros expertos seleccionan solo los mejores ejemplares del día, verificando tamaño, color y frescura de cada pieza.</p>
+            <div class="step-features">
+              <span class="feature">✓ Tamaño óptimo</span>
+              <span class="feature">✓ Color natural</span>
+              <span class="feature">✓ Textura firme</span>
+            </div>
+          </div>
+        </div>
         
-        <p>Nuestro equipo de expertos selecciona cuidadosamente cada pieza, asegurando que llegue a tu mesa con la misma frescura que tiene cuando sale del mar. <strong>Tu éxito es nuestro éxito</strong>, y por eso trabajamos incansablemente para superar tus expectativas.</p>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>🌡️ Control de Frescura</h3>
+            <p>Verificamos temperatura, color y textura de cada producto con equipos especializados para garantizar frescura máxima.</p>
+            <div class="step-features">
+              <span class="feature">✓ Temperatura controlada</span>
+              <span class="feature">✓ Análisis visual</span>
+              <span class="feature">✓ Pruebas de frescura</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>⚖️ Pesaje Preciso</h3>
+            <p>Utilizamos balanzas certificadas y calibradas para garantizar el peso exacto de cada pedido, sin sorpresas.</p>
+            <div class="step-features">
+              <span class="feature">✓ Balanzas certificadas</span>
+              <span class="feature">✓ Calibración diaria</span>
+              <span class="feature">✓ Peso garantizado</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>🚚 Entrega Garantizada</h3>
+            <p>Tu pedido llega en perfectas condiciones en solo 2 horas, con embalaje especial que mantiene la frescura.</p>
+            <div class="step-features">
+              <span class="feature">✓ Embalaje especial</span>
+              <span class="feature">✓ Entrega en 2h</span>
+              <span class="feature">✓ Condiciones óptimas</span>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      <div class="process-cta">
+        <h3>🎯 ¿Quieres experimentar nuestro proceso de calidad?</h3>
+        <p>Descubre por qué los mejores restaurantes de Quito confían en nuestro riguroso proceso</p>
+        <a href="https://wa.me/593994999468?text=Hola! Quiero conocer más sobre su proceso de calidad" class="cta-button" target="_blank" rel="noopener">
+          🔬 ¡Conocer Proceso!
+        </a>
+      </div>
+    </section>
 
-      <div class="about-cta">
-        <h3>🎯 ¿Por qué elegir ANDRIMAR?</h3>
-        <ul class="benefits-list">
-          <li>✅ <strong>20 años de experiencia</strong> en el mercado nacional</li>
-          <li>✅ <strong>Proveedores directos</strong> - Sin intermediarios</li>
-          <li>✅ <strong>Frescura garantizada</strong> en todos nuestros productos</li>
-          <li>✅ <strong>Entrega rápida</strong> a domicilio o negocio</li>
-          <li>✅ <strong>Peso exacto</strong> - Sin sorpresas</li>
-          <li>✅ <strong>Atención personalizada</strong> y profesional</li>
-          <li>✅ <strong>Disponibilidad todo el año</strong> (excepto veda)</li>
-          <li>✅ <strong>Precios competitivos</strong> por compra directa</li>
-        </ul>
+    <!-- Sección de Urgencia -->
+    <section class="urgency-section">
+      <div class="urgency-content">
+        <h2>⏰ ¡OFERTA POR TIEMPO LIMITADO!</h2>
+        <div class="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">24</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label">Minutos</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label">Segundos</span>
+          </div>
+        </div>
+        <p><strong>¡Descuento del 15% en tu primer pedido mayor a $50!</strong></p>
+        <p>Válido solo para nuevos clientes. ¡No dejes pasar esta oportunidad!</p>
+        <a href="https://wa.me/593994999468?text=Hola! Quiero aprovechar el descuento del 15% en mi primer pedido" class="cta-button urgency-button" target="_blank" rel="noopener">
+          🔥 ¡Aprovechar Descuento!
+        </a>
       </div>
+    </section>
 
-      <div class="about-closing">
-        <p class="closing-text"><strong>Contáctanos hoy mismo</strong> y descubre por qué somos la elección preferida de restaurantes, hoteles y amantes de los mariscos en Quito. <strong>Estaremos gustosos de servirte</strong> y demostrarte la diferencia que hace trabajar con verdaderos expertos.</p>
+    <section id="contacto" aria-labelledby="contacto-titulo">
+      <h2 id="contacto-titulo">📞 Contacto</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>📞 ¡Hablemos de Mariscos!</h3>
+          <p>Estamos aquí para ayudarte a encontrar los mejores productos para tu negocio o evento.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <span class="contact-icon">📱</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/593994999468?text=Hola! Necesito información sobre sus productos" target="_blank" rel="noopener">0994999468</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:ana_acosta_ra@hotmail.com">ana_acosta_ra@hotmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Ubicación</strong>
+                <a href="https://maps.google.com/?q=-0.08488224,-78.50351" target="_blank" rel="noopener" class="location-link">C. O, Quito 170301</a>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <span class="contact-icon">🕒</span>
+              <div>
+                <strong>Horario</strong>
+                <span>Lunes a Sábado 8:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <h3>🚀 ¿Listo para Empezar?</h3>
+          <p>¡No esperes más! Contáctanos ahora y descubre por qué somos los mejores proveedores de mariscos en Quito.</p>
+          
+          <div class="contact-buttons">
+            <a href="https://wa.me/593994999468?text=Hola! Quiero información sobre precios y productos" class="cta-button primary" target="_blank" rel="noopener">
+              📞 Consulta Gratuita
+            </a>
+            <a href="https://wa.me/593994999468?text=Hola! Quiero hacer un pedido urgente" class="cta-button secondary" target="_blank" rel="noopener">
+              🚚 Pedido Urgente
+            </a>
+          </div>
+          
+          <div class="contact-guarantee">
+            <p><strong>✅ Respuesta en menos de 5 minutos</strong></p>
+            <p><strong>✅ Consulta sin compromiso</strong></p>
+            <p><strong>✅ Precios especiales para nuevos clientes</strong></p>
+          </div>
+        </div>
       </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/593994999468?text=Hola! Me interesan sus productos de mariscos frescos" class="whatsapp-button" title="Contáctanos por WhatsApp" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener">
+    📞
+  </a>
+
+  <!-- Modal para imágenes de productos -->
+  <div id="imageModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Cerrar modal">&times;</button>
+      <img id="modalImage" class="modal-image" src="" alt="">
+      <div id="modalTitle" class="modal-title"></div>
     </div>
-
-    <div class="vision-mision">
-      <div class="vision">
-        <h3>🎯 Nuestra Visión</h3>
-        <p>Ser el <strong>proveedor líder</strong> de mariscos frescos en Quito, reconocidos por nuestra calidad excepcional, confiabilidad inquebrantable y servicio de clase mundial. Aspiramos a ser el socio estratégico que impulse el éxito de restaurantes y satisfaga las necesidades más exigentes de nuestros clientes.</p>
-      </div>
-      <div class="mision">
-        <h3>🌟 Nuestra Misión</h3>
-        <p>Proporcionar productos marinos de la <strong>más alta calidad</strong>, garantizando frescura incomparable y peso exacto, con un servicio de entrega puntual y atención personalizada que <strong>supere las expectativas</strong> de nuestros clientes. Nos comprometemos a mantener los más altos estándares de calidad en cada entrega.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="productos">
-    <h2>🐚 Nuestros Productos Premium</h2>
-    
-    <div class="product-category">
-      <h3 class="category-title">🦀 Cangrejos</h3>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Pulpa de Cangrejo Fresca">
-          <h3>🦀 Pulpa de Cangrejo</h3>
-          <p>Fresca, limpia y lista para cocinar. Ideal para ceviches, pastas y recetas gourmet.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Uñas de Cangrejo Premium">
-          <h3>🦞 Uñas de Cangrejo</h3>
-          <p>Selección premium de uñas de cangrejo para restaurantes y distribuidores.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-category">
-      <h3 class="category-title">🦞 Langostas y Langostinos</h3>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Langosta Fresca">
-          <h3>🦞 Langosta</h3>
-          <p>Langosta fresca de la mejor calidad, perfecta para platos gourmet y eventos especiales.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Langostino Premium">
-          <h3>🦐 Langostino</h3>
-          <p>Langostinos frescos y de gran tamaño, ideales para ceviches y paellas.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-category">
-      <h3 class="category-title">🐙 Pulpos</h3>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Pulpo Fresco">
-          <h3>🐙 Pulpo</h3>
-          <p>Pulpo fresco o precocido, en cortes ideales para preparaciones marinas.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-category">
-      <h3 class="category-title">🦑 Calamares</h3>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Calamar Baby">
-          <h3>🦑 Calamar Baby</h3>
-          <p>Calamar baby tierno y delicado, perfecto para frituras y ceviches.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Calamar Pota">
-          <h3>🦑 Calamar Pota</h3>
-          <p>Calamar pota de gran tamaño, ideal para cortes en anillas y preparaciones gourmet.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-category">
-      <h3 class="category-title">🦪 Almejas</h3>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Almeja Blanca">
-          <h3>🦪 Almeja Blanca</h3>
-          <p>Almeja blanca fresca, perfecta para sopas y preparaciones marinas.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Almeja Perla">
-          <h3>🦪 Almeja Perla</h3>
-          <p>Almeja perla de excelente calidad, ideal para ceviches y platos gourmet.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Almeja Gris">
-          <h3>🦪 Almeja Gris</h3>
-          <p>Almeja gris fresca, perfecta para sopas y preparaciones tradicionales.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Almeja Pulpa">
-          <h3>🦪 Almeja Pulpa</h3>
-          <p>Pulpa de almeja limpia y lista para cocinar, ideal para pastas y arroces.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-category">
-      <h3 class="category-title">🦪 Mejillones</h3>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Mejillón en Cáscara">
-          <h3>🦪 Mejillón en Cáscara</h3>
-          <p>Mejillones frescos en cáscara, perfectos para paellas y preparaciones marinas.</p>
-        </div>
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop" alt="Mejillón Pulpa">
-          <h3>🦪 Mejillón Pulpa</h3>
-          <p>Pulpa de mejillón limpia y lista para cocinar, ideal para pastas y salsas.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-category">
-      <h3 class="category-title">🦪 Otros Moluscos</h3>
-      <div class="product-grid">
-        <div class="product">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Concha Fresca">
-          <h3>🦪 Concha</h3>
-          <p>Concha fresca de excelente calidad, perfecta para ceviches y preparaciones gourmet.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="cta-section">
-      <h2>🚚 ¡Entrega Rápida y Segura!</h2>
-      <p>Llevamos nuestros productos frescos directamente a tu hogar o negocio en Quito y alrededores.</p>
-      <a href="https://wa.me/593994999468" class="cta-button" target="_blank">📞 ¡Ordena Ahora!</a>
-    </div>
-  </section>
-
-  <section id="contacto">
-    <h2>📞 Contacto</h2>
-    <div class="contact-info">
-      <p>📍 <strong>Ubicación:</strong> <a href="https://maps.google.com/?q=-0.08488224,-78.50351" target="_blank" class="location-link">C. O, Quito 170301</a></p>
-      <p>📞 <strong>WhatsApp:</strong> <a href="https://wa.me/593994999468" target="_blank">0994999468</a></p>
-      <p>✉️ <strong>Email:</strong> <a href="mailto:ana_acosta_ra@hotmail.com">ana_acosta_ra@hotmail.com</a></p>
-      <p>🕒 <strong>Horario de Atención:</strong> Lunes a Sábado 8:00 AM - 6:00 PM</p>
-      <p>🚚 <strong>Entrega:</strong> Quito y alrededores</p>
-    </div>
-  </section>
-
-  <a href="https://wa.me/593994999468" class="whatsapp-button" title="Contáctanos por WhatsApp">📞</a>
+  </div>
 
   <footer>
     <p>&copy; 2025 Andrimar - Todos los derechos reservados.</p>
     <p>🐟 Proveedores de mariscos frescos con 20 años de experiencia</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
